@@ -1,4 +1,4 @@
-# Term-AI: AI-Powered Terminal Command Generator
+ChatGPT Powered Terminal Command Generator
 
 A lightweight command-line tool that uses AI to generate shell commands from natural language requests.
 
