@@ -1,0 +1,9 @@
+README.md
+ai_command.py
+setup.py
+term_ai.egg-info/PKG-INFO
+term_ai.egg-info/SOURCES.txt
+term_ai.egg-info/dependency_links.txt
+term_ai.egg-info/entry_points.txt
+term_ai.egg-info/requires.txt
+term_ai.egg-info/top_level.txt
