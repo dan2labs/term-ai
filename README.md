@@ -1,14 +1,36 @@
-# Term-AI: AI-Powered Terminal Command Generator
+# ChatGPT Powered Terminal Command Generator
 
 A lightweight command-line tool that uses AI to generate shell commands from natural language requests.
 
-## Features
+Example usages:
 
-- 🚀 Generate shell commands from natural language
-- 🔒 Safe command generation with built-in safety checks
-- 💻 Works on macOS, Linux, and Windows
-- ⚡ Fast and lightweight
-- 🎯 Simple and intuitive interface
+Show command and ask for confirmation before executing:
+```bash
+ai "find python files"
+# Output: Generated command: find . -name "*.py"
+# Execute this command? (y/N):
+```
+
+Just display the generated command without executing:
+```bash
+ai "show current date" -d
+# Output: date
+```
+
+Automatically run the generated command without confirmation:
+```bash
+ai "show current date" -e
+```
+
+For the best experience, set up shell integration with Cmd+G keybinding:
+
+```bash
+# Run the setup script
+./setup_shell.sh
+
+# Then use Cmd+G (or Ctrl+G) to activate AI command helper
+# Type your request and review the generated command
+```
 
 ## Installation
 
