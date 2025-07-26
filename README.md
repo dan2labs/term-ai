@@ -139,6 +139,51 @@ For the best experience, set up shell integration with Cmd+G keybinding:
 - OpenAI API key
 - Internet connection
 
+## Troubleshooting
+
+### "OPENAI_API_KEY not found" Error
+
+If you get this error even after creating the `.env` file:
+
+1. **Verify the .env file location:**
+   ```bash
+   ls -la ~/.env
+   ```
+
+2. **Check the .env file content:**
+   ```bash
+   head -c 20 ~/.env
+   ```
+
+3. **Force reinstall the package:**
+   ```bash
+   pip install --force-reinstall git+https://github.com/dan2labs/term-ai.git
+   ```
+
+4. **If using a virtual environment, make sure to install in the same environment:**
+   ```bash
+   source .venv/bin/activate  # or your venv path
+   pip install git+https://github.com/dan2labs/term-ai.git
+   ```
+
+### "No module named 'dotenv'" Error
+
+Install the required dependency:
+```bash
+pip install python-dotenv
+```
+
+### Command Not Found
+
+If the `ai` command isn't found after installation:
+```bash
+# Check if it's installed
+pip list | grep term-ai
+
+# Reinstall if needed
+pip install --force-reinstall git+https://github.com/dan2labs/term-ai.git
+```
+
 ## License
 
 MIT License - see LICENSE file for details.
