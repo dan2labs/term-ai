@@ -2,14 +2,6 @@
 
 A lightweight command-line tool that uses AI to generate shell commands from natural language requests.
 
-## Features
-
-- 🚀 Generate shell commands from natural language
-- 🔒 Safe command generation with built-in safety checks
-- 💻 Works on macOS, Linux, and Windows
-- ⚡ Fast and lightweight
-- 🎯 Simple and intuitive interface
-
 ## Installation
 
 ### Quick Install (Recommended)
