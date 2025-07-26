@@ -14,12 +14,14 @@ def load_environment():
         print("❌ Error: OPENAI_API_KEY not found in .env file")
         print("Please create a .env file with your OpenAI API key")
         return False
+    print("✅ Environment loaded successfully")
     return True
 
 def init_openai_client():
     """Initialize and return OpenAI client"""
     try:
         client = OpenAI()
+        print("✅ OpenAI client initialized successfully")
         return client
     except Exception as e:
         print(f"❌ Error initializing OpenAI client: {e}")

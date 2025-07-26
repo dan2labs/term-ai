@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="term-ai",
     version="1.0.0",
-    author="dandan labs",
+    author="dandanlabs",
     author_email="",
     description="AI-powered terminal command generator",
     long_description=long_description,
