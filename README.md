@@ -57,7 +57,7 @@ pip install .
 
 1. Create a `.env` file in your home directory:
 ```bash
-echo "OPENAI_API_KEY=your_openai_api_key_here" > ~/.env
+echo "TERMAI_OPENAI_API_KEY=your_openai_api_key_here" > ~/.env
 ```
 
 2. Get your OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
@@ -141,7 +141,7 @@ For the best experience, set up shell integration with Cmd+G keybinding:
 
 ## Troubleshooting
 
-### "OPENAI_API_KEY not found" Error
+### "TERMAI_OPENAI_API_KEY not found" Error
 
 If you get this error even after creating the `.env` file:
 

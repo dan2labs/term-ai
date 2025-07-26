@@ -15,17 +15,18 @@ def load_environment():
     else:
         load_dotenv()  # Try current directory
     
-    api_key = os.getenv('OPENAI_API_KEY')
+    api_key = os.getenv('TERMAI_OPENAI_API_KEY')
     if not api_key:
-        print("Error: OPENAI_API_KEY not found in .env file")
-        print("Please create a .env file in your home directory (~/.env) with your OpenAI API key")
+        print("Error: TERMAI_OPENAI_API_KEY not found in .env file")
+        print("Please create a .env file in your home directory (~/.env) with your OpenAI API key:")
+        print("TERMAI_OPENAI_API_KEY=your_openai_api_key_here")
         return False
     return True
 
-def init_openai_client():
+def init_openai_client(api_key):
     """Initialize and return OpenAI client"""
     try:
-        client = OpenAI()
+        client = OpenAI(api_key=api_key)
         return client
     except Exception as e:
         print(f"Error initializing OpenAI client: {e}")
@@ -103,7 +104,9 @@ def main():
     user_request = ' '.join(args.request)
     
     if load_environment():
-        client = init_openai_client()
+        # Get the API key from the environment
+        api_key = os.getenv('TERMAI_OPENAI_API_KEY')
+        client = init_openai_client(api_key)
         if client:
             result = generate_command(client, user_request)
             if result:
