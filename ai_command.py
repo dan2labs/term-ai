@@ -8,11 +8,17 @@ from openai import OpenAI
 
 def load_environment():
     """Load environment variables from .env file"""
-    load_dotenv()
+    # Try to load from home directory first, then current directory
+    home_env = os.path.expanduser("~/.env")
+    if os.path.exists(home_env):
+        load_dotenv(home_env)
+    else:
+        load_dotenv()  # Try current directory
+    
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:
         print("Error: OPENAI_API_KEY not found in .env file")
-        print("Please create a .env file with your OpenAI API key")
+        print("Please create a .env file in your home directory (~/.env) with your OpenAI API key")
         return False
     return True
 
