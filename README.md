@@ -75,7 +75,7 @@ ai "show me git status and recent commits"
 
 ## Usage Modes
 
-### Default Mode (Recommended)
+### Default Mode
 Show command and ask for confirmation before executing:
 ```bash
 ai "find python files"
@@ -173,17 +173,6 @@ pip list | grep term-ai
 # Reinstall if needed
 pip install --force-reinstall git+https://github.com/dan2labs/term-ai.git
 ```
-
-## License
-
-MIT License - see LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ## Support
 
