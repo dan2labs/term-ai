@@ -22,16 +22,6 @@ Automatically run the generated command without confirmation:
 ai "show current date" -e
 ```
 
-For the best experience, set up shell integration with Cmd+G keybinding:
-
-```bash
-# Run the setup script
-./setup_shell.sh
-
-# Then use Cmd+G (or Ctrl+G) to activate AI command helper
-# Type your request and review the generated command
-```
-
 ## Installation
 
 ### Quick Install (Recommended)
