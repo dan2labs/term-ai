@@ -173,7 +173,5 @@ pip list | grep term-ai
 # Reinstall if needed
 pip install --force-reinstall git+https://github.com/dan2labs/term-ai.git
 ```
-
-## Support
-
-If you encounter any issues, please open an issue on GitHub. 
+***
+_Disclaimer: 99% vibe coded with Cursor_
