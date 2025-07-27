@@ -55,9 +55,9 @@ pip install .
 
 ## Setup
 
-1. Create a `.env` file in your home directory:
+1. Add the API key to the `.env` file in your home directory:
 ```bash
-echo "TERMAI_OPENAI_API_KEY=your_openai_api_key_here" > ~/.env
+echo "TERMAI_OPENAI_API_KEY=your_openai_api_key_here" >> ~/.env
 ```
 
 2. Get your OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
