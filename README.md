@@ -123,12 +123,6 @@ For the best experience, set up shell integration with Cmd+G keybinding:
 | `ai "files modified today"` | `find . -type f -mtime -1` |
 | `ai "search for hello"` | `grep -r "hello" .` |
 
-## Requirements
-
-- Python 3.7 or higher
-- OpenAI API key
-- Internet connection
-
 ## Troubleshooting
 
 ### "TERMAI_OPENAI_API_KEY not found" Error
